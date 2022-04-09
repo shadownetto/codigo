@@ -1,0 +1,4 @@
+https://getbootstrap.com.br/docs/4.1/layout/overview/
+
+https://sequelize.org/v7/manual/getting-started.html
+

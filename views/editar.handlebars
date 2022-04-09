@@ -1,0 +1,14 @@
+<h1>Editar Empresa: </h1>
+<div class="card">
+    <form action="/editar" method="POST">
+    
+        <label for="nome">Nome: </label><br>
+            <input type="text" id="nome" name="nome" required placeholder="Nome representante" value="{{dataValues.nome}}"><br>
+        <label for="nome">Empresa: </label><br>
+            <input type="text" id="sobreNome" name="sobreNome" required placeholder="Empresa" value="{{dataValues.sobreNome}}"><br>
+        <label for="email">E-mail: </label><br>
+            <input type="email" id="email" name="email" required placeholder="E-mail comercial" value="{{dataValues.email}}"><br>
+    <button class="btn btn-primary" type="submit">Editar Empresa</button>
+
+    </form>
+</div>

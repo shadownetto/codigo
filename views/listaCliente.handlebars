@@ -1,0 +1,11 @@
+
+<h1>Lista de Clientes: </h1><br>
+<hr>
+{{#each clientes}}
+    <p>Nome Cliente: {{dataValues.nome}}{{ dataValues.sobreNome}}</p>
+    <p>Telefone: {{dataValues.telefone}} </p>
+    <p>Data de Cadastro: {{#formatDate dataValues.createdAt}}{{/formatDate}}</p>
+    <a href= "/deletarCliente/{{dataValues.id}}"><button class="btn btn-danger">Deletar</button></a>
+    <a href= "/editarCliente/{{dataValues.id}}"><button class="btn btn-primary">Editar</button></a>
+    <hr>
+{{/each}}

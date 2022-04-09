@@ -1,0 +1,21 @@
+{
+  "name": "sequelize",
+  "version": "1.0.0",
+  "description": "CRUD sequelize NodeJs",
+  "main": "app.js",
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-handlebars": "^5.3.4",
+    "moment": "^2.29.1",
+    "mysql2": "^2.3.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.6.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js"
+  },
+  "author": "Gledson Leal",
+  "license": "ISC"
+}

@@ -1,0 +1,20 @@
+
+<h1>Funcionalidades: </h1><br>
+<a href= "/cadastro"><button class="btn btn-info">Cadastrar Empresa</button></a>
+<a href= "/listaEmpresa"><button class="btn btn-info">Listar Empresas</button></a>
+<a href= "/cadastroCliente"><button class="btn btn-info">Cadastrar Cliente</button></a>
+<a href= "/listaCliente"><button class="btn btn-info">Listar Cliente</button></a>
+
+{{#each alunos}}
+    <p>Nome Completo: {{dataValues.nome}}{{ dataValues.sobreNome}}</p>
+    <p>E-mail: {{dataValues.email}} </p>
+    <p>Data de Cadastro: {{#formatDate dataValues.createdAt}}{{/formatDate}}</p>
+    <a href= "/deletar/{{dataValues.id}}"><button class="btn btn-danger">Deletar</button></a>
+    <a href= "/editar/{{dataValues.id}}"><button class="btn btn-primary">Editar</button></a>
+    <hr>
+{{/each}}
+
+{{#each result}}
+    <p>Empresas: {{results}}</p>>
+{{/each}}
+<hr>
